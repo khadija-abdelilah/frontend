@@ -1,0 +1,243 @@
+<!-- Spinner Start -->
+<div id="spinner" class="w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50 d-flex align-items-center justify-content-center">
+  <div class="spinner-grow text-primary" role="status"></div>
+</div>
+<!-- Spinner End -->
+
+
+<!-- Navbar start -->
+<div class="container-fluid fixed-top">
+  <div class="container topbar bg-primary d-none d-lg-block">
+    <div class="d-flex justify-content-between">
+      <div class="top-info ps-2">
+        <small class="me-3"><i class="fas fa-map-marker-alt me-2 text-secondary"></i> <a href="#" class="text-white">123 Street, New York</a></small>
+        <small class="me-3"><i class="fas fa-envelope me-2 text-secondary"></i><a href="#" class="text-white">https://therichpost.com</a></small>
+      </div>
+      <div class="top-link pe-2">
+        <a href="#" class="text-white"><small class="text-white mx-2">Privacy Policy</small>/</a>
+        <a href="#" class="text-white"><small class="text-white mx-2">Terms of Use</small>/</a>
+        <a href="#" class="text-white"><small class="text-white ms-2">Sales and Refunds</small></a>
+      </div>
+    </div>
+  </div>
+  <div class="container px-0">
+    <nav class="navbar navbar-light bg-white navbar-expand-xl">
+      <a href="#" class="navbar-brand"><h1 class="text-primary display-6">Fruitables</h1></a>
+      <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <span class="fa fa-bars text-primary"></span>
+      </button>
+      <div class="collapse navbar-collapse bg-white" id="navbarCollapse">
+        <div class="navbar-nav mx-auto">
+          <a href="#" class="nav-item nav-link active">Home</a>
+          <a href="#" class="nav-item nav-link">Shop</a>
+
+
+
+          <a href="#" class="nav-item nav-link">Contact</a>
+          <a href="/signin" class="nav-item nav-link">Sign In</a>
+        </div>
+        <div class="d-flex m-3 me-0">
+          <button class="btn-search btn border border-secondary btn-md-square rounded-circle bg-white me-4" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search text-primary"></i></button>
+          <a href="/cart" class="position-relative me-4 my-auto">
+            <i class="fa fa-shopping-bag fa-2x"></i>
+            <span class="position-absolute bg-secondary rounded-circle d-flex align-items-center justify-content-center text-dark px-1" style="top: -5px; left: 15px; height: 20px; min-width: 20px;">3</span>
+          </a>
+          <a href="#" class="my-auto">
+            <i class="fas fa-user fa-2x"></i>
+          </a>
+        </div>
+      </div>
+    </nav>
+  </div>
+</div>
+<!-- Navbar End -->
+
+
+<!-- Modal Search Start -->
+<div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content rounded-0">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Search by keyword</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body d-flex align-items-center">
+        <div class="input-group w-75 mx-auto d-flex">
+          <input type="search" class="form-control p-3" placeholder="keywords" aria-describedby="search-icon-1">
+          <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal Search End -->
+
+
+<section class="section-content padding-y bg">
+  <div class="container-fluid py-5 mb-5 hero-header">
+    <div class="container py-5">
+      <div class="row g-5 align-items-center">
+        <div class="col-md-12 col-lg-7">
+
+
+
+
+        <article class="card mb-4">
+          <div class="card-body">
+            <h4 class="card-title mb-4">Delivery info</h4>
+            <form action="">
+              <div class="row">
+                <div class="form-group col-sm-6">
+                  <label class="js-check box active">
+                    <input type="radio" name="dostavka" value="option1" checked="">
+                    <h6 class="title">Delivery</h6>
+                    <p class="text-muted">We will deliver by DHL Kargo</p>
+                  </label> <!-- js-check.// -->
+                </div>
+                <div class="form-group col-sm-6">
+                  <label class="js-check box">
+                    <input type="radio" name="dostavka" value="option1">
+                    <h6 class="title">Pick-up</h6>
+                    <p class="text-muted">Come to our office to somewhere </p>
+                  </label> <!-- js-check.// -->
+                </div>
+              </div> <!-- row.// -->
+
+
+              <div class="row">
+                <div class="form-group col-sm-6">
+                  <label>City*</label>
+                  <select name="" class="form-control">
+                    <option value="">Tashkent</option>
+                    <option value="">Buxoro</option>
+                    <option value="">Samarqand</option>
+                  </select>
+                </div>
+                <div class="form-group col-sm-6">
+                  <label>Area*</label>
+                  <input type="text" placeholder="Type here" class="form-control">
+                </div>
+                <div class="form-group col-sm-8">
+                  <label>Street*</label>
+                  <input type="text" placeholder="Type here" class="form-control">
+                </div>
+                <div class="form-group col-sm-4">
+                  <label>Building</label>
+                  <input type="text" placeholder="" class="form-control">
+                </div>
+                <div class="form-group col-sm-4">
+                  <label>House</label>
+                  <input type="text" placeholder="Type here" class="form-control">
+                </div>
+                <div class="form-group col-sm-4">
+                  <label>Postal code</label>
+                  <input type="text" placeholder="" class="form-control">
+                </div>
+                <div class="form-group col-sm-4">
+                  <label>Zip</label>
+                  <input type="text" placeholder="" class="form-control">
+                </div>
+              </div> <!-- row.// -->
+            </form>
+          </div> <!-- card-body.// -->
+        </article> <!-- card.// -->
+
+
+        <article class="accordion" id="accordion_pay">
+          <div class="card">
+            <header class="card-header">
+              <img src="assets/images/misc/payment-paypal.png" class="float-right" height="24">
+              <label class="form-check collapsed" data-toggle="collapse" data-target="#pay_paynet">
+                <input class="form-check-input" name="payment-option" checked="" type="radio" value="option2">
+                <h6 class="form-check-label">
+                  Paypal
+                </h6>
+              </label>
+            </header>
+            <div id="pay_paynet" class="collapse show" data-parent="#accordion_pay">
+              <div class="card-body">
+                <p class="text-center text-muted">Connect your PayPal account and use it to pay your bills. You'll be redirected to PayPal to add your billing information.</p>
+                <p class="text-center">
+                  <a href="#"><img src="assets/images/misc/btn-paypal.png" height="32"></a>
+                  <br><br>
+                </p>
+              </div> <!-- card body .// -->
+            </div> <!-- collapse .// -->
+          </div> <!-- card.// -->
+          <div class="card">
+            <header class="card-header">
+              <img src="assets/images/misc/payment-card.png" class="float-right" height="24">
+              <label class="form-check" data-toggle="collapse" data-target="#pay_payme">
+                <input class="form-check-input" name="payment-option" type="radio" value="option2">
+                <h6 class="form-check-label"> Credit Card  </h6>
+              </label>
+            </header>
+            <div id="pay_payme" class="collapse" data-parent="#accordion_pay">
+              <div class="card-body">
+                <p class="alert alert-success">Some information or instruction</p>
+                <form class="form-inline">
+                  <input type="text" class="form-control mr-2" placeholder="xxxx-xxxx-xxxx-xxxx" name="">
+                  <input type="text" class="form-control mr-2" style="width: 100px" placeholder="dd/yy" name="">
+                  <input type="number" maxlength="3" class="form-control mr-2" style="width: 100px" placeholder="cvc" name="">
+                  <button class="btn btn btn-success">Button</button>
+                </form>
+              </div> <!-- card body .// -->
+            </div> <!-- collapse .// -->
+          </div> <!-- card.// -->
+          <div class="card">
+            <header class="card-header">
+              <img src="assets/images/misc/payment-bank.png" class="float-right" height="24">
+              <label class="form-check" data-toggle="collapse" data-target="#pay_card">
+                <input class="form-check-input" name="payment-option" type="radio" value="option1">
+                <h6 class="form-check-label"> Bank Transfer </h6>
+              </label>
+            </header>
+            <div id="pay_card" class="collapse" data-parent="#accordion_pay">
+              <div class="card-body">
+                <p class="text-muted">Some instructions about how to pay </p>
+                <p>
+                  Bank of America, Account number: 12345678912346 <br>
+                  IBAN: 12345, SWIFT: 987654
+                </p>
+              </div> <!-- card body .// -->
+            </div> <!-- collapse .// -->
+          </div> <!-- card.// -->
+        </article>
+        <!-- accordion end.// -->
+
+
+            <dl class="dlist-align">
+              <dt class="text-muted">Delivery type:</dt>
+              <dd>Standart</dd>
+            </dl>
+            <dl class="dlist-align">
+              <dt class="text-muted">Payment method:</dt>
+              <dd>Cash</dd>
+            </dl>
+            <hr>
+            <dl class="dlist-align">
+              <dt>Total:</dt>
+              <dd class="h5">$300.50</dd>
+            </dl>
+            <hr>
+            <p class="small mb-3 text-muted">By clicking you are agree with terms of condition </p>
+            <a href="#" class="btn btn-primary btn-block"> Confirm Order </a>
+
+
+    <!-- ============================ COMPONENT 2 END//  ================================= -->
+
+
+
+
+<!-- ========================= FOOTER ========================= -->
+<footer class="section-footer border-top padding-y">
+  <div class="container">
+    <p class="float-md-right">
+      &copy; Copyright 2021 All rights reserved
+    </p>
+    <p>
+      <a href="#">Terms and conditions</a>
+    </p>
+  </div><!-- //container -->
+</footer>
+<!-- ========================= FOOTER END // ========================= -->
